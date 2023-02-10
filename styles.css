@@ -1,124 +1,176 @@
 body {
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, 0.1fr);
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "p_details p_image"
-        "exp exp"
-        "exp1_details exp1_image"
-        "exp2_details exp2_image"
-        "hobbies hobbies"
-        "hobbies1 hobbies1"
-        "hobbies2 hobbies2"
-        "project project"
-        "project_details project_details"
-    ;
+    margin: 15px;
+    /* border: 150px; */
+    /* border-color: red; */
+    /* border-style: dashed; */
+    background-color: black;
+    color: white;
 }
 
 
-
-.p_details {
-    grid-area: p_details;
-    margin: auto;
-}
-
-.p_image {
-    grid-area: p_image;
-    font-size: 30px;
+.Self-Image {
+    width: 75%;
+    height: 75%;
     margin: auto;
     text-align: center;
+    border-radius: 50%;
 }
 
-.exp {
-    grid-area: exp;
-    text-align: center;
-    font-size: 40px;
-    ;
-}
-
-.exp1_image {
-    grid-area: exp1_image;
-    /* margin: auto; */
-    text-align: left;
-}
-
-.exp1_details {
-    grid-area: exp1_details;
-    /* margin: auto; */
-    text-align: right;
-}
-
-.exp2_details {
-    grid-area: exp2_details;
-    /* margin: auto; */
-    text-align: right;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.exp2_image {
-    grid-area: exp2_image;
-    /* margin: auto; */
-    text-align: left;
-}
-
-.hobbies {
-    grid-area: hobbies;
-    text-align: center;
-    font-size: 40px;
-    ;
-}
-
-.hobbies1 {
-    grid-area: hobbies1;
-    text-align: center;
-}
-
-.hobbies2 {
-    grid-area: hobbies2;
-    text-align: center;
-}
-
-.project {
-    grid-area: project;
-    text-align: center;
-}
-
-.project_details {
-    grid-area: project_details;
-    margin: auto;
-}
-
-
-.p_details img {
+p img {
     width: 25px;
     height: 25px;
 }
 
-.p_image img {
-    width: 300px;
-    height: 300px;
+div {
+    /* background-color: aqua; */
+    /* margin: auto; */
 }
 
-.exp1_image img,
-.exp2_image img {
-    width: 300px;
-    height: 150px;
+hr.solid {
+    border-top: 3px solid blue;
+    margin: 0;
+    width: 100%;
 }
 
-.hobbies1 img,
-.hobbies2 img {
-    width: 150px;
-    height: 150px;
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-rows: repeat(17, 0.1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "grid-content-2 grid-content-1"
+        "grid-content-title-3 grid-content-title-3"
+        "grid-content-3-job-title grid-content-3-job-year"
+        "grid-content-3-job-location grid-content-3-job-location"
+        "grid-content-3-job-description grid-content-3-job-description"
+        "grid-content-4-job-title grid-content-4-job-year"
+        "grid-content-4-job-location grid-content-4-job-location"
+        "grid-content-4-job-description grid-content-4-job-description"
+        "grid-content-title-5 grid-content-title-5"
+        "grid-content-5-hobby-1 grid-content-5-hobby-1"
+        "grid-content-5-hobby-1-description grid-content-5-hobby-1-description"
+        "grid-content-5-hobby-2 grid-content-5-hobby-2"
+        "grid-content-5-hobby-2-description grid-content-5-hobby-2-description"
+        "grid-content-6-progress grid-content-6-progress"
+        "grid-content-6-progress-details-1 grid-content-6-progress-details-1"
+        "grid-content-6-progress-details-2 grid-content-6-progress-details-2"
+        "grid-content-6-progress-details-3 grid-content-6-progress-details-3"
+
+
+    ;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.grid-content-1 {
+    grid-area: grid-content-1;
+    text-align: center;
+}
+
+.grid-content-2 {
+    grid-area: grid-content-2;
+}
+
+.grid-content-2 h1,
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.grid-content-title-3 {
+    grid-area: grid-content-title-3;
+    margin: 0;
+}
+
+.grid-content-title-3 p {
+    text-align: center;
+    margin: auto;
+}
+
+.grid-content-3-job-title {
+    grid-area: grid-content-3-job-title;
+}
+
+.grid-content-3-job-year {
+    grid-area: grid-content-3-job-year;
+}
+
+
+.grid-content-3-job-location {
+    grid-area: grid-content-3-job-location;
+    margin: 0;
+}
+
+.grid-content-3-job-description {
+    grid-area: grid-content-3-job-description;
+}
+
+.grid-content-4-job-title {
+    grid-area: grid-content-4-job-title;
+}
+
+.grid-content-4-job-year {
+    grid-area: grid-content-4-job-year;
+}
+
+
+.grid-content-4-job-location {
+    grid-area: grid-content-4-job-location;
+    margin: 0;
+}
+
+.grid-content-4-job-description {
+    grid-area: grid-content-4-job-description;
+}
+
+.grid-content-title-5 {
+    grid-area: grid-content-title-5;
+    margin: 0;
+}
+
+.grid-content-title-5 p {
+    text-align: center;
+    margin: auto;
+}
+
+.grid-content-5-hobby-1 {
+    grid-area: grid-content-5-hobby-1;
+}
+
+.grid-content-5-hobby-1-description {
+    grid-area: grid-content-5-hobby-1-description;
+}
+
+.grid-content-5-hobby-2 {
+    grid-area: grid-content-5-hobby-2;
+}
+
+.grid-content-5-hobby-2-description {
+    grid-area: grid-content-5-hobby-2-description;
+}
+
+.grid-content-6-progress {
+    grid-area: grid-content-6-progress;
+    margin: 0;
+}
+
+.grid-content-6-progress p {
+    text-align: center;
+    margin: auto;
+}
+
+
+.grid-content-6-progress-details-1 {
+    grid-area: grid-content-6-progress-details-1;
+}
+
+.grid-content-6-progress-details-2 {
+    grid-area: grid-content-6-progress-details-2;
+}
+.grid-content-6-progress-details-3 {
+    grid-area: grid-content-6-progress-details-3;
 }
 
 
@@ -126,36 +178,46 @@ body {
 
     /* For mobile phones: */
     .grid-container {
-        grid-template-columns: 0.1fr;
-        grid-template-rows: repeat(10, 0.1fr);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, 0.1fr);
         gap: 0px 0px;
         grid-auto-flow: row;
         grid-template-areas:
-            "p_image"
-            "p_details"
-            "exp"
-            "exp1_details"
-            "exp1_image"
-            "exp2_details"
-            "exp2_image"
-            "hobbies"
-            "hobbies1"
-            "hobbies2"
-            "project"
-            "project_details"
+            "grid-content-1"
+            "grid-content-2"
+            "grid-content-title-3"
+            "grid-content-3-job-title"
+            "grid-content-3-job-year"
+            "grid-content-3-job-location"
+            "grid-content-3-job-description"
+            "grid-content-4-job-title"
+            "grid-content-4-job-year"
+            "grid-content-4-job-location"
+            "grid-content-4-job-description"
+            "grid-content-title-5"
+            "grid-content-5-hobby-1"
+            "grid-content-5-hobby-1-description"
+            "grid-content-5-hobby-2"
+            "grid-content-5-hobby-2-description"
+            "grid-content-6-progress"
+            "grid-content-6-progress-details-1"
+            "grid-content-6-progress-details-2"
+            "grid-content-6-progress-details-3"
+
         ;
     }
 
-    .exp1_image img,
-    .exp2_image img {
-        width: 150px;
-        height: 75px;
-    }
+    /* .grid-content-2 h1,
+    h2 {
 
-    .exp1_image,
-    .exp1_details,
-    .exp2_details,
-    .exp2_image {
         text-align: center;
-    }
+    } */
+
+    /* .grid-content-3-job-location,
+    .grid-content-4-job-location {
+        margin: auto;
+        text-align: center;
+    } */
+
 }
